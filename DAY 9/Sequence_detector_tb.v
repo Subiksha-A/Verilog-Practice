@@ -10,7 +10,6 @@ module tb_sequence_detector;
         .y(y)
     );
 
-  
     initial begin
         clk = 0;
         forever #5 clk = ~clk;  
@@ -36,15 +35,7 @@ module tb_sequence_detector;
         x = 0; #10;
         x = 0; #10;  
 
-        x = 0; #10;
-        x = 0; #10;
-        x = 0; #10;
-        x = 0; #10;
-        x = 0; #10;
-        x = 0; #10;
-        x = 1; #10;
-        x = 1; #10; 
-      
+        
         x = 1; #10;
         x = 1; #10;
         x = 0; #10;
@@ -76,5 +67,4 @@ module tb_sequence_detector;
         #50;
         $finish;
     end
-
 endmodule
